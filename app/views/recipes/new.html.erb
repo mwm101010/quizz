@@ -1,0 +1,11 @@
+<br />
+<div class="my-form col-10 offset-1">
+  <h1>Add New Recipe</h1>
+  <%= simple_form_for @recipe, url: recipes_path do |f| %>
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <br />
+    <%= f.submit "Create", class: 'btn btn-primary' %>
+    <% end %>
+    <br />
+  </div>

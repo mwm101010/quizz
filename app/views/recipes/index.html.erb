@@ -1,0 +1,10 @@
+<br />
+<br />
+<div>
+  <h1>Recipes</h1>
+  <% @recipes.each do |t| %>
+    <li> <%= t.title %></li>
+      <ul>- <%= t.description %> </ul>
+  <% end %>
+  
+</div>
